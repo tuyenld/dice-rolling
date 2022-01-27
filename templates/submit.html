@@ -1,0 +1,14 @@
+{% extends "index.html" %}
+{% block body %}
+<h1>ouroboros</h1>
+{{ svg|safe }}
+<form method="post" action="{{url_for('form')}}" enctype="multipart/form-data">
+    <p>cx:</p>
+    <input type="text" name="cx">
+    <p>cy:</p>
+    <input type="text" name="cy">
+    <p>r:</p>
+    <input type="text" name="r">
+    <input type="submit">
+</form>
+{% endblock %}

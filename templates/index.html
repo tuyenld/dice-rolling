@@ -1,30 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="Cache-control" content="public">
     <title>Home - Dice rolling</title>
     <meta name="description" content="Virtual free dice rolling">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css">
+
+    <style>
+        #svg_img {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
 </head>
 
 <body id="page-top" style="background: #FFB500;">
-    <header class="d-flex masthead">
-        <div class="container text-center my-auto">
-            <h1 class="mb-1">VDR</h1>
-            <h3 class="mb-5"><em>A Free Virtual Dice Rolling</em></h3>
-            <div class="row">
-                <div class="col"><img src="/static/img/six-sided-dice.svg" width="200">
-                    <div class="dropdown"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-toggle="dropdown" type="button" style="margin: 14px;">How many sides are the dice</button>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Six sides</a><a class="dropdown-item" href="#">Eight sides</a><a class="dropdown-item" href="#">Ten sides</a></div>
-                    </div>
-                </div>
-            </div><a class="btn btn-primary btn-xl js-scroll-trigger" role="button" href="#about" style="margin-bottom: 14px;">Click this button to roll a dice</a>
+
+    <div class="container text-center my-auto">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h1 class="mb-1">VDR</h1>
+                <h3 class="mb-5"><em>A Free Virtual Dice Rolling</em></h3>
+            </div>
         </div>
-    </header>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js"></script>
+
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div id="svg_img" text-align="center"  width="400" height="400">
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="dropdown"><button class="btn btn-primary dropdown-toggle" aria-expanded="false"
+                        data-toggle="dropdown" type="button" style="margin: 14px;">How many sides are the
+                        dice</button>
+                    <div class="dropdown-menu"><a class="dropdown-item" href="#">Six sides</a><a class="dropdown-item"
+                            href="#">Eight sides</a><a class="dropdown-item" href="#">Ten
+                            sides</a></div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div><a class="btn btn-primary btn-xl js-scroll-trigger" role="button" id="diceButton"
+                        style="margin: 20px; background: darkblue">Click this button to roll a dice</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"
+        integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A=="
+        crossorigin="anonymous"></script> -->
+    <!-- AJAX is NOT included in jquery.slim -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js"
+        integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA=="
+        crossorigin="anonymous"></script>
+    <!-- 3D library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"
+        integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ=="
+        crossorigin="anonymous"></script>
+    <script src="/static/dice.js"></script>
 </body>
 
 </html>
