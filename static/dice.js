@@ -18,7 +18,7 @@ function centerElement(s) {
     if (s == 5) { /* up-down movement */
         targetQuaternion.setFromEuler(new THREE.Euler(Math.PI / 2, 0, 0));
     }
-    else if (s == 6) {
+    else if (s == 4) {
         targetQuaternion.setFromEuler(new THREE.Euler(3 * Math.PI / 2, 0, 0));
     }
     else { /* left-right movement */
